@@ -37,9 +37,5 @@ VOLUME /var/www
 # Expose FPM port.
 EXPOSE 9000
 
-# Copy entry-point script
-COPY ./entry-point.sh /entry-point.sh
-ENTRYPOINT ["/entry-point.sh"]
-
 # Define default command.
 CMD ["php5-fpm"]
